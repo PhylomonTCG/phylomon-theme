@@ -1,0 +1,1086 @@
+/*
+THEME NAME: Phylomon Theme
+THEME URI: http://phylomon.org
+DESCRIPTION: A theme based on the sandbox theme
+VERSION: 0.5
+AUTHOR: OLT UBC
+AUTHOR URI:
+TAGS: sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, starter theme, minimalist, developer
+*/
+
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* typography.css */
+html {font-size:100.01%;}
+body, input {font-size:75%;color:#222;background:#fff;font-family:Verdana,"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {color:#000;text-decoration:underline;}
+a {color:#0953A8;  text-decoration: none;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {margin:0 1.5em 1.5em 0;padding-left:3.333em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+
+/*
+body {
+	background: url(img/bg.png) no-repeat right bottom;
+}
+*/
+
+/* Main Containers */
+
+#wrapper{
+	width: 1000px;
+	margin:0 auto 80px;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+/*body.page-template-default #container,
+body.page-template-front-page-php #container
+{
+	width: 640px;
+	margin-right: 200px;
+}
+
+*/
+.blog #container,
+.single #container{
+	width: 680px;
+	margin-right: 0;
+}
+
+body.category-cards #container,
+body.category-diy-cards #container,
+body.s-category-cards #container,
+body.s-category-diy-cards #container,
+body.tax #container,
+#container{
+	width: 840px;
+	float: right;
+	margin-right: 0;
+}
+
+/*
+	Sidebars
+*/
+.sidebar {
+	margin-top: 55px;
+}
+
+/* Make the container larger on the front page 
+   so it can fill the space left by removing the sidebar */
+body.home #container {
+	width:100%;	
+}
+
+#primary,#secondary{
+	width: 160px;
+	float: left;
+	font-size:.9em;
+
+}
+
+#secondary ul ul li{
+	margin-bottom:5px;
+	line-height: 1.2;
+}
+
+
+/* Header */
+#header{
+	margin-top:30px;
+}
+#blog-title{
+	text-transform: uppercase;
+}
+#blog-title a{
+	font-size: 28px;
+	color: #222;
+	text-decoration: none;
+}
+#blog-description{
+	display: none;
+}
+
+/* Footer */
+/*
+#footer-container {
+	padding:20px;	
+	color:white;	
+	border-top: 1px solid #ffffff;
+	background:#DEE1E2 top repeat-x url("img/footer-bg.jpg");
+}
+
+#footer {
+	width:940px;
+	margin: 0 auto 300px;
+	padding:20px;
+	text-align:left;
+}
+*/
+
+#footer ul {
+	padding-left:0px;
+	list-style:none outside none;	
+}
+
+#footer li.column {
+    float: left;
+    font-size: 12px;
+color: #000000;
+    margin-left: 80px;
+    width:220px;
+}
+
+#footer li.column li {
+    border-bottom: 1px dotted #556A7E;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+}
+
+#footer li a {
+    color: #000000;
+    display: block;
+    font-weight: lighter;
+    padding-bottom: 8px;
+}
+
+#footer h5 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+#menu ul{
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+#menu ul li{
+	list-style: none;
+	display: inline;
+	padding-right: 10px;
+	border-left: 1px solid #CCC;
+	padding-left: 10px;
+	line-height: 1;
+	
+}
+#menu ul li#menu-home{
+	border: 0;
+	padding-left: 0;
+}
+#menu ul li a{
+	color:#AAA;
+	text-transform:lowercase;
+	text-decoration: none;
+}
+#menu ul li a:hover,
+#menu ul li.current_page_item a,
+#menu ul li.current_page_ancestor a,
+#menu ul li.current_page_parent a{
+	color:#222;
+}
+
+/* DIY-Card */
+.cards-nav-widget{
+	font-size:13px;
+	margin-bottom:4px;
+}
+.cards-nav-widget a {
+	background:#eeeeee;
+	border-left: 2px solid #1B4EA8;
+	border-bottom: 1px solid #eeeeee;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin-bottom:4px;
+	display:block;
+	padding:4px;
+	
+}
+
+.cards-nav-widget a:hover {
+	border-left: 3px solid #1B4EA8;
+}
+
+/* Home Page */
+.home-splash td{
+	font-size:13px;
+}
+
+.home-splash a {
+	color:#981205;	
+	font-size:14px;
+}
+
+.home-footer {
+	font-size: 10px;
+	color: #888;	
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+.home-footer a {
+	color: #777;
+	text-decoration:underline;	
+}
+
+/* Blog Entries */
+.post{
+	margin-bottom:15px;
+}
+
+h2.entry-title {
+	margin: 0;
+}
+
+body.blog #content h2.entry-title{
+	font-size:22px;
+}
+
+body.archive #content > h2,
+body.page #content div.page > h2,
+body.single #content div.post > h2 {
+	margin-bottom:8px;
+	font-size:35px;
+    text-decoration: none;
+}
+
+/* Hide the title on the front page */
+body.home h2.entry-title,
+body.home h2.page-title{
+	display:none;
+}
+
+/*
+.post h2.entry-title,
+h2.entry-title a,
+h3.entry-title a{
+	color:#222;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+*/
+h2 span.edit-post
+{
+	font-size: 12px;
+	display: block;
+	float: right;
+}
+h2 span.edit-post a{
+ font-size: 12px;
+ color:#0E4F8C;
+}
+.entry-comments{
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 15px;
+}
+.entry-comments span{
+	line-height: 15px;
+	padding-bottom: 10px;
+	background: #FFF;
+	padding: 0 5px 10px 0;
+	font-size: 10px;
+	color: #AAA;
+}
+.entry-content{
+	margin-bottom: 10px;
+}
+
+.page-template-card-php .entry-content{
+	border: 0;
+	margin: 0;
+}
+.page-title span{
+	text-transform: capitalize;
+	color:#AAA;
+}
+.entry-meta{
+	position: relative;
+	overflow: hidden;
+	font-size: 10px;
+	padding: 0 5px;
+}
+.entry-meta-author-date{
+	width:200px;
+	float: left;
+	border-right: 1px solid #CCC;
+	margin-right: 15px;
+}
+.tag-links{
+	display: block;
+}
+
+
+/*
+ * Comments 
+ **/
+ #comments{
+ 	clear: both;
+	padding-top: 10px;
+ }
+#comments-list,
+#trackbacks-list {
+	border-top: 1px solid #CCC;
+}
+#comments-list h3{
+	font-size: 14px;
+}
+#comments-list ol{
+	margin: 0;
+	padding: 0;
+}
+#comments-list ol li{
+	list-style: none;
+	background: #EEE;
+	margin: 0;
+	padding: 10px 10px 1px 10px;
+	-moz-border-radius:2px;
+	-webkit-border-radius: 2px;
+}
+#comments-list ol li.alt{
+	background: #FFF;
+	
+}
+.comment-meta{
+	float: right;
+	font-size: 10px;
+	line-height: 14px;
+}
+.comment-author{
+	float: left;
+	line-height: 14px;
+
+}
+.comment-author img{
+	background: #FFF;
+	padding: 2px;
+}
+.comment-author .fn{
+	display: block;
+	margin-left: 45px;
+	margin-top: -35px;
+}
+.comment-text{
+	clear:both;
+	margin-left: 45px;
+	padding-top:3px;
+	border-top:1px solid #CCC;
+}
+
+#trackbacks-list .comment-author{
+	float: none;
+}
+#trackbacks-list .comment-text
+{
+	margin: 0;
+}
+span.required{
+	color:red;
+}
+
+/* comment form */
+#comments input,
+#comments textarea
+{
+	border:1px solid #DDD;
+ 	padding: 3px;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ 	-moz-border-radius:1px ;
+ 	width: 230px;
+	-webkit-border-radius: 1px;
+}
+#comments textarea {
+	width: 570px;
+	font-weight: normal;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	
+}
+
+#comments input.button{
+	-moz-border-radius:5px ;
+	-webkit-border-radius: 5px;
+	width: auto;
+}
+#respond{
+	border-top:1px solid #CCC;
+}
+#respond h3{
+	margin-top: 10px;
+	font-size: 14px;
+}
+p#login{
+	float: left;
+	width: 240px;
+}.form-label {
+	margin-top: 10px;
+}
+.form-labels-textarea-shell{
+	float: left;
+	width: 570px;
+}
+.form-labels-input-shell{
+	width:250px;
+	float: left;
+}
+.form-submit{
+	clear: both;
+	float: left;
+}
+/**
+ * Card 
+ *********************/
+ul.cards{
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	margin-bottom: 50px;
+	color:#000;
+}
+
+.card-container{
+	width:270px;
+	float: left;
+	margin:0 0 10px 10px;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+}
+div.card-container{
+	margin:0 10px 10px 0;
+}
+
+/* the place where all the card action happens */
+.card-action{
+	list-style: none;
+	margin: 0;
+	padding: 2px 10px 2px 0;
+	width:260px;
+	background: #EEE;
+	float: left;
+}
+
+.card-action li{
+	float: left;
+	font-size: 11px;
+}
+.card-action li a{
+	padding-left: 12px;
+}
+
+
+li.card, li.card-in-queue, div.card{
+	list-style: none;
+	width:240px;
+	height: 380px;
+	padding: 5px;
+	border: 10px solid #222;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	position: relative;
+	overflow: hidden;
+	
+}
+div.card{
+	margin:0 10px 0 0;
+	float: left;
+	
+	
+}
+.card-photo{
+	margin: 0 10px 0 0;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	clear:both;
+	height: 350px;
+}
+.card-photo .card-image{
+	width: 275px;
+	height: auto;
+}
+.photo-page a span{
+	font-size: 10px;
+	display: none;
+}
+.photo-page a:hover {
+	text-decoration: none;
+}
+.photo-page a:hover span{
+	display: inline;
+	color:#666;
+}
+
+.post div.card{
+	clear: both;
+}
+
+img.card-background{
+	position:absolute;
+	top:0;
+	z-index:1;
+	left: 0;
+}
+
+li.third{
+	margin: 0 0 10px 0;
+}
+h2.card-name,
+h2.card-name a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	z-index: 10;
+	position: relative;
+	overflow: hidden;
+	height: 16px;
+}
+h2.smaller-13  a{
+	font-size: 13px;
+}
+h2.smaller-12  a{
+	font-size: 12px;
+}
+h2.smaller-11  a{
+	font-size: 11px;
+}
+h2.smaller{
+	font-size: 10px;
+}
+span.latin-name{
+	position: relative;
+	z-index: 10;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	overflow: hidden;
+	
+}
+
+.num-values{
+	position: absolute;
+	z-index: 10;
+	right: 7px;
+	top:5px;
+}
+.card-image{
+	width: 250px;
+	height: 155px;
+	overflow: hidden;
+	margin: 4px 0 4px -5px;
+	z-index: 10;
+	position: relative;
+}
+.card-classification{
+	
+	float:right;
+	font-family:courier,sans-serif;
+	font-size:9px;
+	position:relative;
+	text-align:right;
+	width:195px;
+	z-index:12;
+}
+.creative-commons{
+	z-index: 10;
+	position: absolute;
+	top:202px;
+	left: 3px;
+}
+.card-text{
+	z-index: 10;
+	position: absolute;
+	top:220px;
+	left: 10px;
+	width: 230px;
+	height:130px;
+	overflow: hidden;
+	font-size: 10.5px;
+color: #34282C;
+
+font-family:helvetica,times,sans-serif;
+
+}
+
+.card-text p {
+	margin-bottom:2px;	
+}
+
+.card-temperature {
+	z-index: 10;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	font-size: 11px;
+	font-weight: bold;
+	width: 70px;
+	text-align: right;
+}
+
+div.card-image img{
+	width: 100%;
+}
+div.card-image .empty{
+	display: block;
+	background: #EEE;
+	height: 140px;
+	padding:50px 20px;
+	text-align: center;
+}
+.card-credit {
+	position: absolute;
+	bottom: 0;
+	height: 28px;
+	left: 4px;
+	font-size:11px;
+	line-height: 13px;
+	z-index: 10;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.card-credit span{
+	display: block;
+}
+
+.card-flip-content {
+	display: none;
+}
+
+ul.card-meta{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	position: relative;
+}
+ul.card-meta span{
+	color:#AAA;
+}
+ul.card-meta strong{
+	text-transform: uppercase;
+}
+
+.card-entry-content{
+	margin-left: 290px;
+}
+
+
+/***
+ * On the home page
+ ***/
+
+ul.card-queue{
+	clear: both;
+	margin: 5px 0 0 -8px;
+	padding: 0;
+	float: left;
+}
+li.card-in-queue{
+	width: 143px;
+	height: 175px;
+	margin-bottom: 0;
+	border: 3px solid #222;
+	float: left;
+	margin-left: 8px;
+}
+
+li.card-in-queue .card-name{
+	height: auto;
+	font-size:11px;
+	line-height: 13px;
+}
+li.card-in-queue .card-image{
+	position: absolute;
+	top:43px;
+	left: 0;
+	width: 157px;
+	height:auto;
+}
+
+/* Home Page */
+.latest{
+	background: #CCC;
+	position: relative;
+	overflow: hidden;
+	-moz-border-radius-topleft:15px;
+	-webkit-border-top-left-radius:15px;
+    -moz-border-radius-bottomleft:15px; 
+    -webkit-border-bottom-left-radius:15px;
+    margin-bottom:10px;
+
+}
+.latest-images{
+	background: #FFF;
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 0 -10px;
+	padding: 0 ;
+}
+.latest-images li{
+	list-style: none;
+	padding: 0;
+	margin: 5px 0 0 10px;
+	width: 156px;
+	height: 97px;
+	overflow: hidden;
+	float: left;
+	border:1px solid #333;
+}
+.latest-images li img{
+	width: 156px;
+}
+.flickr-cards {
+	margin-top: 20px;
+	clear:both;
+	width: 100%;
+}
+.flickr-cards br{
+	display: none;
+}
+.flickr-cards p{
+	margin: 0;
+	display: inline;
+}
+.flickr-cards ul{
+	clear: both;
+}
+.flickr-cards h3{
+	padding-bottom: 10px;
+	display: inline;
+	line-height: 25px;
+}
+.more{
+	margin:5px 0 0 0;
+	float: right;
+}
+
+
+/* phylomon cards cart */
+#phylomon-cards-cart{
+	border:2px solid #EEE;
+	padding: 5px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin: 10px 0;
+	background: #FFF;
+}
+#phylomon-cards-cart h2{
+	font-size: 12px;
+	background: #EEE;
+	margin: -5px -5px 0 -5px;
+	padding: 5px;
+	font-weight: bold;
+}
+#phylomon-cards-cart-list{
+	margin: -5px -5px 0 -5px;
+	padding: 5px;
+}
+#phylomon-cards-cart li{
+	padding: 4px 0;
+	line-height: 1.15;
+}
+#phylomon-cards-cart span{
+	display: block;
+	border-top:2px solid #EEE;
+}
+#phylomon-cards-cart span a{
+	
+}
+#phylomon-cards-cart em{
+	display: block;
+	color:#FFF;
+	background: #A2122F;
+	margin: -5px -5px 0 -5px;
+	padding: 5px;
+}
+#phylomon-cards-cart em a{
+	color:#FFF;
+	text-decoration: underline;
+}
+
+/* widget */
+.xoxo{
+	margin: 0 15px 0 0;
+	padding: 0;
+	list-style: none;
+
+}
+.widget{
+	margin-bottom: 15px;
+}
+.widget #wp-calendar th, 
+.widget #wp-calendar td, 
+.widget #wp-calendar caption
+{
+	padding: 2px;
+}.widget h3{
+	font-size: 14px;
+}
+.widget ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li.recentcomments{
+	padding-bottom: 10px;
+}
+
+/* Special classes */
+
+.skip-link{
+	position: absolute;
+	top:-9999em;
+}
+#akismet-credit-insert{
+	text-align: center;
+}
+
+
+/*
+ pagination 
+ */
+#wrapper .wp-pagenavi{
+	float: right;
+	font-size: 10px;
+	font-weight:bold;
+	margin:-40px 0 10px;
+    clear:both;
+	border-width:2px;
+}
+
+body.blog #wrapper .wp-pagenavi{
+	margin:0 0 10px;
+}
+
+/* 
+ Disable showing below tags and categorie lists of cards
+*/
+body.tax > #wrapper > .wp-pagenavi,
+body.tag > #wrapper > .wp-pagenavi{
+	display:none;	
+}
+
+/*
+.archive #wrapper .wp-pagenavi{
+	margin: 0 0 10px;
+	clear:both;
+}
+*/
+
+#wrapper .wp-pagenavi span,
+#wrapper .wp-pagenavi a{
+	border:1px solid #ddd;
+	padding: 3px 7px;
+	line-height: 22px;
+	margin:0 2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius: 2px;
+}
+#wrapper .wp-pagenavi a:hover{
+	text-decoration: none;
+	background: #0953A8;
+	color:#FFF;
+	border:1px solid #3F546C;
+}
+/* Graphic and Page */
+#toggle-photo-graphic{
+	font: 9px;	
+}
+#toggle-photo-graphic a{
+	padding-left: 30px;
+	line-height: 20px;
+	padding-bottom: 4px;
+	display: block;
+}
+#toggle-photo-graphic a.show-graphic{
+	background: url(img/paint-photo.gif) no-repeat 0 -25px;
+}
+#toggle-photo-graphic a.show-photo{
+	background: url(img/paint-photo.gif) no-repeat 0 -2px;
+}
+#print {
+	margin-top: 5px;
+	padding-top: 5px;
+	background: url(img/paint-photo.gif) no-repeat 0 -44px;
+}
+
+
+/*
+ Ajax Autocomplete 
+ */
+ #card-searchform-shell{
+ 	float: right;
+ 	width: 385px;
+ 	margin-top: -40px;
+ 	text-align: right;
+ }
+ #card-autosearch{
+ 	width: 295px;
+ 	border:1px solid #DDD;
+ 	padding: 3px;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ 	-moz-border-radius:1px ;
+	-webkit-border-radius: 1px;
+	background: url(img/paint-photo.gif) no-repeat 100% -70px;
+ }
+  #card-autosearch:hover,
+   #card-autosearch:active{
+   	border:1px solid #AAA;
+   }
+#comments input.button,
+input.button{
+	-moz-border-radius:5px ;
+	-webkit-border-radius: 5px;
+	background:url("img/white-grad.png") repeat-x scroll left top transparent;
+	border:1px solid #DDDDDD;
+	color:#888888;
+	cursor:pointer;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+	vertical-align:bottom;
+}
+input.button:hover{
+	color: #222;
+	border:1px solid #AAA;
+}
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete { position: absolute; cursor: default; }	
+.ui-autocomplete-loading { background: white url('img/ui-anim.gif') right center no-repeat; }
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+	list-style:none;
+	padding: 0;
+	width: 310px;
+	margin: 0;
+	display:block;
+	z-index: 100!important;
+	-moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.2);
+	filter:alpha(opacity=95);
+	-moz-opacity:0.95;
+	-khtml-opacity: 0.95;
+	background: #EEE;
+	-moz-box-shadow:    inset 0 0 10px #333;
+   -webkit-box-shadow: inset 0 0 10px #333;
+   box-shadow:         inset 0 0 10px #333;
+
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	background: #FFF;
+	position: relative;
+	overflow: hidden;
+	border-bottom:1px solid #CCC;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:3px 5px;
+	line-height:1.5;
+	position: relative;
+	overflow: hidden;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	background: #EEE;
+}
+.ui-menu .ui-menu-item span{
+	float: left;
+	text-align:left;
+	font-size: 14px;
+	font-weight: bold;
+	color:#222;
+	width: 190px;
+}
+img.card-thumb{
+	width:100px;
+	float: right;
+}
+
+#akismet-credit-insert {
+	display: none!important;
+}
+
+/**
+ * Search form
+ * ----------------------------------------------------------------------------
+ */
+#card-autosearch{
+	width:200px;
+}
+/* Hide the WP-Stats plugin image smiley face that it uses to track visitors.  
+   Previously displayed at the bottom of every page. */
+img#wpstats { 
+	width:0px;
+	height:0px;
+	overflow:hidden;
+}
+

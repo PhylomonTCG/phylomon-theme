@@ -1,0 +1,39 @@
+/* This style sheet is only used on the edit post and new post page of the wordpress admin panel
+ to style the 
+*/
+
+.phylomon_container {
+	border-bottom: 1px solid #CCC;
+	margin: 0 -6px;
+	padding:0 10px;
+	position: relative;
+	overflow: hidden;
+}
+.phylomon_container h4 {
+	margin:10px 0 0;
+}
+.odd {
+	background: #EEE;
+	
+}
+.photo {
+	
+}
+.phylomon_container .half {
+	float: left;
+}
+
+#phylomon_card_content{
+	font-size: 11px;
+	font-family: Verdana, sans-serif;
+		width: 245px;
+	height:140px;
+}
+div.classification,
+div.diy_classification{
+	padding:5px 0 ;
+}
+div.classification span,
+div.diy_classification span{
+	color:red;
+}

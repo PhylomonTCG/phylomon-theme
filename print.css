@@ -1,0 +1,83 @@
+/* card template */
+
+/* Things to hide */
+#wpabar,
+.sidebar,
+#access,
+.page-template-card-php #header,
+.page-template-card-php .page-title,
+.page-template-card-php .entry-content,
+.wp-pagenavi,
+.card-action,
+#card-searchform-shell,
+#respond,
+.no-print,
+.category-cards .page-title,
+.category-cards #header,
+page-title
+{display: none;}
+
+html, body{margin:0; padding: 0;}
+
+
+body.category-cards #container, 
+body.s-category-cards #container, 
+body.tax #container, 
+#container,
+body.page-template-default #container,
+body.page-template-front-page-php #container
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* Card page temlate */
+body .card-image{
+	width: 310px;
+	height: 192px;
+
+}
+body .card{
+	list-style: none;
+	width: 300px;
+	height:425px!important;
+	page-break-after:avoid; 
+    page-break-inside:avoid 
+    margin:0 1px 1px 0!important;
+}
+.card-container{
+	page-break-after: always;
+
+}
+body .card-container{
+	width:330px;
+	margin: 1px 1px 0 0;
+}
+
+body .card-background{
+	width: 310px;
+	height: auto;
+	top:-50px;
+}
+
+ul.cards a{
+	color:#000;
+}
+
+.creative-commons{
+	z-index: 10;
+	position: absolute;
+	top:238px;
+	left: 3px;
+}
+.card-text{
+	z-index: 10;
+	position: absolute;
+	top:256px;
+	left: 10px;
+	width: 290px;
+	height:130px;
+	overflow: hidden;
+	font-size: 11px;
+}
+
